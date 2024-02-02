@@ -34,7 +34,10 @@ function isLandscape() {
     return window.innerWidth > window.innerHeight;
 }
 
-function prefetchImages(imageUrls) {
+function prefetchImages() {
+    let imageUrls = landscape
+        ? projects.map((item) => item.desktop)
+        : projects.map((item) => item.mobile);
     $.each(imageUrls, function (index, url) {
         $("<img>")
             .attr("src", url)
@@ -44,7 +47,10 @@ function prefetchImages(imageUrls) {
     });
 }
 
-function setBackground(url) {
+function setBackground() {
+    const url = landscape
+        ? projects[currentIndex].desktop
+        : projects[currentIndex].mobile;
     $(".background-wrap").css("background-image", `url(${url})`);
 }
 
@@ -62,12 +68,11 @@ function setClickEvent() {
     });
 }
 
-function setProjectDetails(forMobile) {
-    $(
-        forMobile
-            ? "#footer-project-description"
-            : "#nav-bar-project-description"
-    ).text(projects[currentIndex].description);
+function setProjectDetails() {
+    $("#footer-project-description").text(projects[currentIndex].description);
+    $("#nav-bar-project-description")
+        .text(projects[currentIndex].description)
+        .attr("href", projects[currentIndex].url);
 }
 
 let currentIndex = Math.floor(Math.random() * projects.length);
@@ -78,45 +83,16 @@ let landscape = isLandscape();
 // and touch capabilities
 // prefetch other background images so they are read from cache
 function setPage() {
-    if ($("body").width() > 497) {
-        if (isTouchDevice()) {
-            // landscape iphones or ipads
+    landscape = isLandscape();
 
-            // make body scrollable
-            makeBodyScrollable();
-            // set background on background-wrap class instead of body
-            setBackground(
-                landscape
-                    ? projects[currentIndex].desktop
-                    : projects[currentIndex].mobile
-            );
-            setProjectDetails(true);
-            // Determine which set of images to prefetch based on 'landscape' flag
-            prefetchImages(
-                projects.map((item) => (landscape ? item.desktop : item.mobile))
-            );
-        } else {
-            // normal desktop
-
-            // set background
-            setBackground(projects[currentIndex].desktop);
-            setProjectDetails(false);
-            // prefetch
-            prefetchImages(projects.map((item) => item.desktop));
-        }
-    } else {
-        // mobile
+    if (isTouchDevice()) {
         makeBodyScrollable();
-        // set background on background-wrap class instead of body
-        setBackground(projects[currentIndex].mobile);
-        // set description
-        setProjectDetails(true);
-        // prefetch
-        prefetchImages(projects.map((item) => item.mobile));
     }
 
-    // when image is clicked user is directed to the corresponding project page
-    setClickEvent(projects[currentIndex].url);
+    setBackground();
+    setProjectDetails();
+    prefetchImages();
+    setClickEvent();
 }
 
 // add event listener
@@ -131,16 +107,10 @@ $(document).ready(function () {
 
             if (newIndex !== currentIndex) {
                 currentIndex = newIndex;
-                if (landscape) {
-                    if (currentIndex >= 0) {
-                        setBackground(projects[currentIndex].desktop);
-                    }
-                } else {
-                    if (currentIndex >= 0) {
-                        setBackground(projects[currentIndex].mobile);
-                    }
+                if (currentIndex >= 0) {
+                    setBackground();
                 }
-                setProjectDetails(true);
+                setProjectDetails();
                 // when image is clicked user is directed to the corresponding project page
                 setClickEvent();
             }
@@ -154,8 +124,8 @@ $(document).ready(function () {
             let newIndex = Math.floor(pageX / sectionSize);
             if (newIndex !== currentIndex) {
                 currentIndex = newIndex;
-                setBackground(projects[currentIndex].desktop);
-                setProjectDetails(false);
+                setBackground();
+                setProjectDetails();
                 // when image is clicked user is directed to the corresponding project page
                 setClickEvent();
             }
@@ -163,10 +133,23 @@ $(document).ready(function () {
     }
 });
 
-// register event handler
-$(window).on("orientationchange", () => {
-    landscape = !landscape;
+function debounce(func, wait) {
+    let timeout;
+    return function () {
+        const context = this,
+            args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+}
+
+// Debounced resize event handler
+const handleResize = debounce(function () {
+    console.log("Window resized!");
+    // Your resize logic here
     setPage();
-});
+}, 100); // Wait for 250ms of no resize event activity before firing
+
+window.addEventListener("resize", handleResize);
 
 setPage();
