@@ -1,21 +1,24 @@
 let projects = [
     {
-        url: "projects#item-magazin-4",
+        url: "projects#sechs-monate-amerika",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c6_archive_image_101.jpg",
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c6_archive_image_101.jpg",
+        description: "Sechs Monate Amerika",
     },
     {
-        url: "projects#michael-mueller-catalogue-raisonné",
+        url: "projects#am-abgrund-der-bilder",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c5_archive_image_103.jpg",
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c5_archive_image_103.jpg",
+        description: "Am Abgrund der Bilder",
     },
     {
-        url: "projects#item-magazin-3",
+        url: "projects#kunstsaele",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c4_archive_image_104.jpg",
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c4_archive_image_104.jpg",
+        description: "Kunstsaele",
     },
 ];
 
@@ -26,8 +29,45 @@ function isTouchDevice() {
         navigator.msMaxTouchPoints > 0
     );
 }
+
 function isLandscape() {
     return window.innerWidth > window.innerHeight;
+}
+
+function prefetchImages(imageUrls) {
+    $.each(imageUrls, function (index, url) {
+        $("<img>")
+            .attr("src", url)
+            .on("load", function () {
+                console.log(`Image ${url} loaded successfully`);
+            });
+    });
+}
+
+function setBackground(url) {
+    $(".background-wrap").css("background-image", `url(${url})`);
+}
+
+function makeBodyScrollable() {
+    $("body").css({
+        height: "500vh",
+        backgroundImage: "none",
+        backgrundColor: "white",
+    });
+}
+
+function setClickEvent() {
+    $(".background-wrap").click(function (event) {
+        window.location = projects[currentIndex].url;
+    });
+}
+
+function setProjectDetails(forMobile) {
+    $(
+        forMobile
+            ? "#footer-project-description"
+            : "#nav-bar-project-description"
+    ).text(projects[currentIndex].description);
 }
 
 let currentIndex = Math.floor(Math.random() * projects.length);
@@ -39,185 +79,86 @@ let landscape = isLandscape();
 // prefetch other background images so they are read from cache
 function setPage() {
     if ($("body").width() > 497) {
-        // landscape iphones or ipads
         if (isTouchDevice()) {
-            // make body scrollable
-            $("body").css({
-                height: "500vh",
-                backgroundImage: "none",
-                backgrundColor: "black",
-            });
-            // set background on background-wrap class instead of body
-            // this css does not exist for width > 497, thus we set it manually
-            $(".background-wrap").css({
-                "background-image": `url(${
-                    landscape
-                        ? projects[currentIndex].desktop
-                        : projects[currentIndex].mobile
-                })`,
-                // position: "fixed",
-                // left: "0%",
-                // top: "0%",
-                // right: "auto",
-                // bottom: "auto",
-                // zIndex: 0,
-                // width: "100vw",
-                // height: "100%",
-                // paddingRight: "0px",
-                // paddingBottom: "0px",
-                // backgroundPosition: "center",
-                // backgroundSize: "cover",
-                // backgroundRepeat: "no-repeat",
-                // backgroundAttachment: "fixed",
-                // cursor: "pointer",
-            });
-            // prefetch
-            // Determine which set of images to prefetch based on 'landscape' flag
-            const imageUrls = projects.map((item) =>
-                landscape ? item.desktop : item.mobile
-            );
+            // landscape iphones or ipads
 
-            // Prefetch each image
-            $.each(imageUrls, function (index, url) {
-                $("<img>")
-                    .attr("src", url)
-                    .on("load", function () {
-                        console.log(`Image ${url} loaded successfully`);
-                        // Optionally, perform actions after each image is successfully loaded
-                    })
-                    .appendTo("body")
-                    .css("display", "none"); // Append to the body to ensure loading, but hide it
-            });
+            // make body scrollable
+            makeBodyScrollable();
+            // set background on background-wrap class instead of body
+            setBackground(
+                landscape
+                    ? projects[currentIndex].desktop
+                    : projects[currentIndex].mobile
+            );
+            setProjectDetails(true);
+            // Determine which set of images to prefetch based on 'landscape' flag
+            prefetchImages(
+                projects.map((item) => (landscape ? item.desktop : item.mobile))
+            );
         } else {
             // normal desktop
-            $(".background-wrap").css({
-                "background-image": `url(${projects[currentIndex].desktop})`,
-                // position: "fixed",
-                // left: "0%",
-                // top: "0%",
-                // right: "auto",
-                // bottom: "auto",
-                // zIndex: 0,
-                // width: "100vw",
-                // height: "100%",
-                // paddingRight: "0px",
-                // paddingBottom: "0px",
-                // backgroundPosition: "center",
-                // backgroundSize: "cover",
-                // backgroundRepeat: "no-repeat",
-                // backgroundAttachment: "fixed",
-                // cursor: "pointer",
-            });
-            // $("body").css("background-image", "url(" + imageLinksDesktop[Math.floor(Math.random() * (imageLinksDesktop.length))] + ")");
+
+            // set background
+            setBackground(projects[currentIndex].desktop);
+            setProjectDetails(false);
             // prefetch
-            $.each(
-                projects.map((item) => item.desktop),
-                function (index, url) {
-                    $("<img>")
-                        .attr("src", url)
-                        .on("load", function () {
-                            console.log(`Image ${url} loaded successfully`);
-                            // Optionally, perform actions after each image is successfully loaded
-                        })
-                        .appendTo("body")
-                        .css("display", "none"); // Append to the body to ensure loading, but hide it
-                }
-            );
+            prefetchImages(projects.map((item) => item.desktop));
         }
-        // mobile
     } else {
-        $("body").css({
-            height: "500vh",
-            backgroundImage: "none",
-            backgrundColor: "black",
-        });
+        // mobile
+        makeBodyScrollable();
         // set background on background-wrap class instead of body
-        $(".background-wrap").css({
-            "background-image": `url(${projects[currentIndex].mobile})`,
-            // position: "fixed",
-            // left: "0%",
-            // top: "0%",
-            // right: "auto",
-            // bottom: "auto",
-            // zIndex: 0,
-            // width: "100vw",
-            // height: "100%",
-            // paddingRight: "0px",
-            // paddingBottom: "0px",
-            // backgroundPosition: "center",
-            // backgroundSize: "cover",
-            // backgroundRepeat: "no-repeat",
-            // backgroundAttachment: "fixed",
-            // cursor: "pointer",
-        });
+        setBackground(projects[currentIndex].mobile);
+        // set description
+        setProjectDetails(true);
         // prefetch
-        $.each(
-            projects.map((item) => item.mobile),
-            function (index, url) {
-                $("<img>")
-                    .attr("src", url)
-                    .on("load", function () {
-                        console.log(`Image ${url} loaded successfully`);
-                        // Optionally, perform actions after each image is successfully loaded
-                    })
-                    .appendTo("body")
-                    .css("display", "none"); // Append to the body to ensure loading, but hide it
-            }
-        );
+        prefetchImages(projects.map((item) => item.mobile));
     }
 
     // when image is clicked user is directed to the corresponding project page
-    $(".background-wrap").click(function (event) {
-        window.location = projects[currentIndex].url;
-    });
+    setClickEvent(projects[currentIndex].url);
 }
 
 // add event listener
 $(document).ready(function () {
-    // desktop
-    if (!isTouchDevice()) {
-        $("body").mousemove(function (event) {
-            let bodyWidth = $("body").width();
-            let pageX = event.pageX;
-            let sectionSize = bodyWidth / projects.length;
-            currentIndex = Math.floor(pageX / sectionSize);
-            $(".background-wrap").css(
-                "background-image",
-                `url(${projects[currentIndex].desktop})`
-            );
-            // when image is clicked user is directed to the corresponding project page
-            $(".background-wrap").click(function (event) {
-                window.location = projects[currentIndex].url;
-            });
-        });
-    } else {
-        // touch devices
+    if (isTouchDevice()) {
+        // mobile
         $(window).scroll(function (event) {
             let bodyHeight = $("body").height() - $(window).height();
             let scrolledY = $(window).scrollTop();
             let sectionSize = Math.floor(bodyHeight / (projects.length - 1));
-            currentIndex = Math.floor(scrolledY / sectionSize);
+            let newIndex = Math.floor(scrolledY / sectionSize);
 
-            if (landscape) {
-                if (currentIndex >= 0) {
-                    $(".background-wrap").css(
-                        "background-image",
-                        `url(${projects[currentIndex].desktop})`
-                    );
+            if (newIndex !== currentIndex) {
+                currentIndex = newIndex;
+                if (landscape) {
+                    if (currentIndex >= 0) {
+                        setBackground(projects[currentIndex].desktop);
+                    }
+                } else {
+                    if (currentIndex >= 0) {
+                        setBackground(projects[currentIndex].mobile);
+                    }
                 }
-            } else {
-                console.log(currentIndex);
-                if (currentIndex >= 0) {
-                    $(".background-wrap").css(
-                        "background-image",
-                        `url(${projects[currentIndex].mobile})`
-                    );
-                }
+                setProjectDetails(true);
+                // when image is clicked user is directed to the corresponding project page
+                setClickEvent();
             }
-            // when image is clicked user is directed to the corresponding project page
-            $(".background-wrap").click(function (event) {
-                window.location = projects[currentIndex].url;
-            });
+        });
+    } else {
+        // desktop
+        $("body").mousemove(function (event) {
+            let bodyWidth = $("body").width();
+            let pageX = event.pageX;
+            let sectionSize = bodyWidth / projects.length;
+            let newIndex = Math.floor(pageX / sectionSize);
+            if (newIndex !== currentIndex) {
+                currentIndex = newIndex;
+                setBackground(projects[currentIndex].desktop);
+                setProjectDetails(false);
+                // when image is clicked user is directed to the corresponding project page
+                setClickEvent();
+            }
         });
     }
 });
