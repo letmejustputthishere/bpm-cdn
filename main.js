@@ -1,119 +1,24 @@
-console.log("hello world");
+let projects = [
+    {
+        url: "projects#item-magazin-4",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c6_archive_image_101.jpg",
+        desktop:
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c6_archive_image_101.jpg",
+    },
+    {
+        url: "projects#michael-mueller-catalogue-raisonné",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c5_archive_image_103.jpg",
+        desktop:
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c5_archive_image_103.jpg",
+    },
+    {
+        url: "projects#item-magazin-3",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c4_archive_image_104.jpg",
+        desktop:
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba687c4_archive_image_104.jpg",
+    },
+];
 
-let imageLinksDesktop = [
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_1.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_2.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_3.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_4.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_5.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_6.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_7.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_8.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_9.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_10.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_11.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_12.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_13.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_14.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_15.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_16.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_17.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_18.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_19.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_20.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_21.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_22.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_23.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_24.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_25.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_26.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_27.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_28.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_29.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_30.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_31.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_32.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_33.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_34.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_35.webp",
-    "../images/01_LandingPage/01_Desktop/LandingPage_image_36.webp",
-];
-let projectLinks = [
-    "project/item-magazin-4.html",
-    "project/michael-mueller-catalogue-raisonné.html",
-    "project/deutsches-historisches-museum.html",
-    "project/kunstsaele-katalog.html",
-    "project/operator-key.html",
-    "project/am-abgrund-der-bilder.html",
-    "project/item-magazin-3.html",
-    "project/item-magazin-1.html",
-    "project/waterslide.html",
-    "project/am-abgrund-der-bilder.html",
-    "project/item-magazin-1.html",
-    "project/studio-michael-mueller-website.html",
-    "project/studio-visit.html",
-    "project/translate-cozy.html",
-    "project/39null-magazin.html",
-    "project/fpdao.html",
-    "project/item-magazin-2.html",
-    "project/item-magazin-1.html",
-    "project/serif-dreaming.html",
-    "project/kultur-in-nordrhein-westfalen.html",
-    "project/studio-visit.html",
-    "project/item-magazin-1.html",
-    "project/xyz-design-festival.html",
-    "project/item-magazin-3.html",
-    "project/kultur-in-nordrhein-westfalen.html",
-    "project/xyz-design-festival.html",
-    "project/michael-mueller-catalogue-raisonné.html",
-    "project/jenny-gleitsmann.html",
-    "project/item-magazin-4.html",
-    "project/deutsches-historisches-museum.html",
-    "project/michael-mueller-catalogue-raisonné.html",
-    "project/fpdao.html",
-    "project/studio-michael-mueller-website.html",
-    "project/wondertours.html",
-    "project/waterslide.html",
-    "project/item-magazin-4.html",
-];
-let imageLinksMobile = [
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_1.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_2.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_3.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_4.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_5.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_6.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_7.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_8.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_9.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_10.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_11.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_12.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_13.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_14.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_15.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_16.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_17.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_18.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_19.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_20.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_21.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_22.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_23.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_24.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_25.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_26.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_27.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_28.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_29.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_30.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_31.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_32.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_33.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_34.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_35.webp",
-    "../images/01_LandingPage/02_Mobile/LandingPage_Mobile_image_36.webp",
-];
 function isTouchDevice() {
     return (
         "ontouchstart" in window ||
@@ -125,7 +30,7 @@ function isLandscape() {
     return window.innerWidth > window.innerHeight;
 }
 
-let currentIndex = 0;
+let currentIndex = Math.floor(Math.random() * projects.length);
 
 let landscape = isLandscape();
 
@@ -133,8 +38,6 @@ let landscape = isLandscape();
 // and touch capabilities
 // prefetch other background images so they are read from cache
 function setPage() {
-    currentIndex = Math.floor(Math.random() * imageLinksDesktop.length);
-
     if ($("body").width() > 497) {
         // landscape iphones or ipads
         if (isTouchDevice()) {
@@ -147,60 +50,79 @@ function setPage() {
             // set background on background-wrap class instead of body
             // this css does not exist for width > 497, thus we set it manually
             $(".background-wrap").css({
-                "background-image":
-                    "url(" +
-                    (landscape
-                        ? imageLinksDesktop[currentIndex]
-                        : imageLinksMobile[currentIndex]) +
-                    ")",
-                position: "fixed",
-                left: "0%",
-                top: "0%",
-                right: "auto",
-                bottom: "auto",
-                zIndex: 0,
-                width: "100vw",
-                height: "100%",
-                paddingRight: "0px",
-                paddingBottom: "0px",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed",
-                cursor: "pointer",
+                "background-image": `url(${
+                    landscape
+                        ? projects[currentIndex].desktop
+                        : projects[currentIndex].mobile
+                })`,
+                // position: "fixed",
+                // left: "0%",
+                // top: "0%",
+                // right: "auto",
+                // bottom: "auto",
+                // zIndex: 0,
+                // width: "100vw",
+                // height: "100%",
+                // paddingRight: "0px",
+                // paddingBottom: "0px",
+                // backgroundPosition: "center",
+                // backgroundSize: "cover",
+                // backgroundRepeat: "no-repeat",
+                // backgroundAttachment: "fixed",
+                // cursor: "pointer",
             });
             // prefetch
-            $(landscape ? imageLinksDesktop : imageLinksMobile).each(
-                function () {
-                    var image = $("<img />").attr("src", this);
-                }
+            // Determine which set of images to prefetch based on 'landscape' flag
+            const imageUrls = projects.map((item) =>
+                landscape ? item.desktop : item.mobile
             );
-            // normal desktop
+
+            // Prefetch each image
+            $.each(imageUrls, function (index, url) {
+                $("<img>")
+                    .attr("src", url)
+                    .on("load", function () {
+                        console.log(`Image ${url} loaded successfully`);
+                        // Optionally, perform actions after each image is successfully loaded
+                    })
+                    .appendTo("body")
+                    .css("display", "none"); // Append to the body to ensure loading, but hide it
+            });
         } else {
+            // normal desktop
             $(".background-wrap").css({
-                "background-image":
-                    "url(" + imageLinksDesktop[currentIndex] + ")",
-                position: "fixed",
-                left: "0%",
-                top: "0%",
-                right: "auto",
-                bottom: "auto",
-                zIndex: 0,
-                width: "100vw",
-                height: "100%",
-                paddingRight: "0px",
-                paddingBottom: "0px",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed",
-                cursor: "pointer",
+                "background-image": `url(${projects[currentIndex].desktop})`,
+                // position: "fixed",
+                // left: "0%",
+                // top: "0%",
+                // right: "auto",
+                // bottom: "auto",
+                // zIndex: 0,
+                // width: "100vw",
+                // height: "100%",
+                // paddingRight: "0px",
+                // paddingBottom: "0px",
+                // backgroundPosition: "center",
+                // backgroundSize: "cover",
+                // backgroundRepeat: "no-repeat",
+                // backgroundAttachment: "fixed",
+                // cursor: "pointer",
             });
             // $("body").css("background-image", "url(" + imageLinksDesktop[Math.floor(Math.random() * (imageLinksDesktop.length))] + ")");
             // prefetch
-            $(imageLinksDesktop).each(function () {
-                var image = $("<img />").attr("src", this);
-            });
+            $.each(
+                projects.map((item) => item.desktop),
+                function (index, url) {
+                    $("<img>")
+                        .attr("src", url)
+                        .on("load", function () {
+                            console.log(`Image ${url} loaded successfully`);
+                            // Optionally, perform actions after each image is successfully loaded
+                        })
+                        .appendTo("body")
+                        .css("display", "none"); // Append to the body to ensure loading, but hide it
+                }
+            );
         }
         // mobile
     } else {
@@ -211,32 +133,42 @@ function setPage() {
         });
         // set background on background-wrap class instead of body
         $(".background-wrap").css({
-            "background-image": "url(" + imageLinksMobile[currentIndex] + ")",
-            position: "fixed",
-            left: "0%",
-            top: "0%",
-            right: "auto",
-            bottom: "auto",
-            zIndex: 0,
-            width: "100vw",
-            height: "100%",
-            paddingRight: "0px",
-            paddingBottom: "0px",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
-            cursor: "pointer",
+            "background-image": `url(${projects[currentIndex].mobile})`,
+            // position: "fixed",
+            // left: "0%",
+            // top: "0%",
+            // right: "auto",
+            // bottom: "auto",
+            // zIndex: 0,
+            // width: "100vw",
+            // height: "100%",
+            // paddingRight: "0px",
+            // paddingBottom: "0px",
+            // backgroundPosition: "center",
+            // backgroundSize: "cover",
+            // backgroundRepeat: "no-repeat",
+            // backgroundAttachment: "fixed",
+            // cursor: "pointer",
         });
         // prefetch
-        $(imageLinksMobile).each(function () {
-            var image = $("<img />").attr("src", this);
-        });
+        $.each(
+            projects.map((item) => item.mobile),
+            function (index, url) {
+                $("<img>")
+                    .attr("src", url)
+                    .on("load", function () {
+                        console.log(`Image ${url} loaded successfully`);
+                        // Optionally, perform actions after each image is successfully loaded
+                    })
+                    .appendTo("body")
+                    .css("display", "none"); // Append to the body to ensure loading, but hide it
+            }
+        );
     }
 
     // when image is clicked user is directed to the corresponding project page
     $(".background-wrap").click(function (event) {
-        window.location = projectLinks[currentIndex];
+        window.location = projects[currentIndex].url;
     });
 }
 
@@ -247,32 +179,30 @@ $(document).ready(function () {
         $("body").mousemove(function (event) {
             let bodyWidth = $("body").width();
             let pageX = event.pageX;
-            let sectionSize = bodyWidth / imageLinksDesktop.length;
+            let sectionSize = bodyWidth / projects.length;
             currentIndex = Math.floor(pageX / sectionSize);
             $(".background-wrap").css(
                 "background-image",
-                "url(" + imageLinksDesktop[currentIndex] + ")"
+                `url(${projects[currentIndex].desktop})`
             );
             // when image is clicked user is directed to the corresponding project page
             $(".background-wrap").click(function (event) {
-                window.location = projectLinks[currentIndex];
+                window.location = projects[currentIndex].url;
             });
         });
-        // touch devices
     } else {
+        // touch devices
         $(window).scroll(function (event) {
             let bodyHeight = $("body").height() - $(window).height();
             let scrolledY = $(window).scrollTop();
-            let sectionSize = Math.floor(
-                bodyHeight / (imageLinksDesktop.length - 1)
-            );
+            let sectionSize = Math.floor(bodyHeight / (projects.length - 1));
             currentIndex = Math.floor(scrolledY / sectionSize);
 
             if (landscape) {
                 if (currentIndex >= 0) {
                     $(".background-wrap").css(
                         "background-image",
-                        "url(" + imageLinksDesktop[currentIndex] + ")"
+                        `url(${projects[currentIndex].desktop})`
                     );
                 }
             } else {
@@ -280,13 +210,13 @@ $(document).ready(function () {
                 if (currentIndex >= 0) {
                     $(".background-wrap").css(
                         "background-image",
-                        "url(" + imageLinksMobile[currentIndex] + ")"
+                        `url(${projects[currentIndex].mobile})`
                     );
                 }
             }
             // when image is clicked user is directed to the corresponding project page
             $(".background-wrap").click(function (event) {
-                window.location = projectLinks[currentIndex];
+                window.location = projects[currentIndex].url;
             });
         });
     }
