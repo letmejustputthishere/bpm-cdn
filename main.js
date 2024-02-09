@@ -322,7 +322,6 @@ function setPage() {
         makeBodyScrollable();
     }
 
-    setBackground();
     setProjectDetails();
     prefetchImages();
     setClickEvent();
