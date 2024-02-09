@@ -1,11 +1,11 @@
 let projects = [
     {
         url: "projects#item-magazin-4",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3adf5c3943a3701d22f_Landing-Page_1.jpg",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c9540da098b1e696ed8_Landing-Page_1.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6871c_item-magazin-4_1.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c55c177319cdb0571a3_Landing-Page_1.jpg",
         description:
-            "item Magazin #4, annual Lectureship at HTW Berlin, Department of Design",
+            "item Magazin #4, annual lectureship at HTW Berlin, Department of Design",
     },
     {
         url: "projects#der-geschenkte-tag",
@@ -27,69 +27,69 @@ let projects = [
         url: "projects#kunstsaele",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ac5b2f5e93f14a5822_Landing-Page_4.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6870f_kunstsaele_1.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8dec6e719a387b277b_Landing-Page_4.jpg",
         description:
-            "956-pages Catalog for the 10-year-anniversary of Kunstsӕle Berlin",
+            "956-pages catalog for the 10-year-anniversary of Kunstsӕle Berlin",
     },
     {
         url: "projects#ministerium-kultur-nrw",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad244539e22313b650_Landing-Page_5.jpg",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c95f75b09dfc352f36b_Landing-Page_5.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6873b_Ministerium-fur-kultur_2.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8d797a98a093b64702_Landing-Page_5.jpg",
         description:
-            "Magazine Design for the Ministerium für Kultur und Wissenschaft NRW",
+            "Magazine design for the Ministerium für Kultur und Wissenschaft NRW",
     },
     {
         url: "projects#am-abgrund-der-bilder",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3acd9ff38f7048ef941_Landing-Page_6.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba686ef_am-abgrund-der-bilder_1.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e1d577804cbf5e0e3_Landing-Page_6.jpg",
         description:
             "Catalog for Michael Müller’s exhibition at the Museum im Kulturspeicher Würzburg",
     },
     {
         url: "projects#item-magazin-3",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad5a57b4b1f3e55876_Landing-Page_7.jpg",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c9504daf8fdc631a1de_Landing-Page_7.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d39b358c5fe6bbb6ffe0_Landing-Page_7.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8db49f6d2960a24456_Landing-Page_7.jpg",
         description:
-            "item Magazin #3, annual Lectureship at HTW Berlin, Department of Design",
+            "item Magazin #3, annual lectureship at HTW Berlin, Department of Design",
     },
     {
         url: "projects#studio-michael-mueller",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3acb891b647e8b125aa_Landing-Page_8.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba686e5_studio-michael-mueller_1.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8eabf27e86e19e4dbe_Landing-Page_8.jpg",
         description: "Visual identity and web design for Studio Michael Müller",
     },
     {
         url: "projects#deutsches-historisches-museum",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad7537e362731f036f_Landing-Page_9.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d39c43da67dca6b8fc2a_Landing-Page_9.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8d748a66371495518e_Landing-Page_9.jpg",
         description:
             "Deutsches Historisches Museum Berlin, printed matter for various exhibitions",
     },
     {
         url: "projects#studio-visit",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad797a98a093932569_Landing-Page_10.jpg",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c95c964e153bd3dc44b_Landing-Page_10.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6872a_studio-visit_1.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e99f5e94a0153546d_Landing-Page_10.jpg",
         description: "Publication for Studio Michael Müller",
     },
     {
         url: "projects#item-magazin-1",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ada884445bf832cbfe_Landing-Page_11.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d39bc964e153bd1b1b90_Landing-Page_11.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e595807266e9eb211_Landing-Page_11.jpg",
         description:
-            "item Magazin #1, annual Lectureship at HTW Berlin, Department of Design",
+            "item Magazin #1, annual lectureship at HTW Berlin, Department of Design",
     },
     {
         url: "projects#am-abgrund-der-bilder",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ac09a951ab0c57bf7f_Landing-Page_12.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba686ec_am-abgrund-der-bilder_3.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e9b093b473dbc21dc_Landing-Page_12.jpg",
         description:
             "Catalog for Michael Müller’s exhibition at the Museum im Kulturspeicher Würzburg",
     },
@@ -97,7 +97,7 @@ let projects = [
         url: "projects#waterslide",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad955dcc74fb98c93e_Landing-Page_13.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba68750_waterslide_2.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e14960ce880fb1cff_Landing-Page_13.jpg",
         description: "Visual identity and web design for waterslide",
     },
     {
@@ -111,7 +111,7 @@ let projects = [
         url: "projects#der-geschenkte-tag",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad7505cd1896e2e1a0_Landing-Page_15.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba68657_der-geschenkte-tag_1.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8ec964e153bd3db857_Landing-Page_15.jpg",
         description:
             "Catalogue Raisonné for Michael Müller on the occasion of his solo exhibition at the Städel Museum Frankfurt",
     },
@@ -129,14 +129,14 @@ let projects = [
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d39bdf84865a88e644ca_Landing-Page_17.jpg",
         description:
-            "Photo Book with over 800 images from North and South America",
+            "Photo Book with over 800 images, documenting contemporary culture in North and South America",
     },
     {
         url: "projects#neununddreissig-null",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad7505cd1896e2e16c_Landing-Page_18.jpg",
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6879a_neununddreissig-null_1.jpg",
-        description: "Redesign for 39NULL Magazine",
+        description: "Redesign for 39NULL magazine",
     },
     {
         url: "projects#fpdao",
@@ -151,11 +151,11 @@ let projects = [
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba68788_item-magazin-1_6.jpg",
         description:
-            "item Magazin #1, annual Lectureship at HTW Berlin, Department of Design",
+            "item Magazin #1, annual lectureship at HTW Berlin, Department of Design",
     },
     {
         url: "projects#embroidery",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3adfaadb6c8a5c7893e_Landing-Page_21.jpg",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c968617864e68a02e38_Landing-Page_21.jpg",
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6877a_embroidery_1.jpg",
         description: "Embroidered typography on textile",
@@ -164,32 +164,33 @@ let projects = [
         url: "projects#item-magazin-3",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad6c9cafa965e5bc42_Landing-Page_22.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba68741_item-magazin-3_3.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8f7a022ebbadd104fd_Landing-Page_22.jpg",
         description:
-            "item Magazin #3, annual Lectureship at HTW Berlin, Department of Design",
+            "item Magazin #3, annual lectureship at HTW Berlin, Department of Design",
     },
     {
         url: "projects#ministerium-kultur-nrw",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3adc964e153bd1b27e7_Landing-Page_23.jpg",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c96dcd92b16d7116a02_Landing-Page_23.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba68736_Ministerium-fur-kultur_1.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8ec177319cdb058d16_Landing-Page_23.jpg",
         description:
-            "Magazine Design for the Ministerium für Kultur und Wissenschaft NRW",
+            "Magazine design for the Ministerium für Kultur und Wissenschaft NRW",
     },
     {
         url: "projects#jenny-gleitsmann",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3acd6711a0b2d62511b_Landing-Page_24.jpg",
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba68758_jenny-gleitsmann_1.jpg",
-        description: "Visual identity and web design for Jenny Gleitsmann",
+        description:
+            "Visual identity and web design for Jenny Gleitsmann Consultancy",
     },
     {
         url: "projects#item-magazin-4",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad220a4806fbfbf3d1_Landing-Page_25.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d39cdf84865a88e64519_Landing-Page_25.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e91312d16cee714a9_Landing-Page_25.jpg",
         description:
-            "item Magazin #4, annual Lectureship at HTW Berlin, Department of Design",
+            "item Magazin #4, annual lectureship at HTW Berlin, Department of Design",
     },
     {
         url: "projects#studio-visit",
@@ -202,28 +203,28 @@ let projects = [
         url: "projects#operator",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ac9e1688e2b533bba5_Landing-Page_27.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6872e_operator_2.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e49105ae42615cb64_Landing-Page_27.jpg",
         description:
-            "Visual Identity for Operator’s NFT-Series “Privacy Collection“ by the artists Ania Catherine and Dejha Ti",
+            "Visual identity for Operator’s NFT-Series “Privacy Collection” by the artists Ania Catherine and Dejha Ti",
     },
     {
         url: "projects#studio-michael-mueller",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3adb7715c09a62af0aa_Landing-Page_28.jpg",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c9679378d9a11857bf7_Landing-Page_28.jpg",
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba686e9_studio-michael-mueller_6.jpg",
         description: "Visual identity and web design for Studio Michael Müller",
     },
     {
         url: "projects#xyz-festival",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad40da098b1e458a64_Landing-Page_29.jpg",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c964575ed74ff6e2d03_Landing-Page_29.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6877f_xyz-festival_1.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e8617864e68a02a67_Landing-Page_29.jpg",
         description:
-            "Visual Identity for XYZ Design Festival, showcased at BAM Berlin",
+            "Visual identity for XYZ Design Festival, showcased at BAM Berlin",
     },
     {
         url: "projects#der-geschenkte-tag",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ae3e39ff0ecc042822_Landing-Page_30.jpg",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c969117ab43e31ee938_Landing-Page_30.jpg",
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6865c_der-geschenkte-tag_4.jpg",
         description:
@@ -233,17 +234,17 @@ let projects = [
         url: "projects#ministerium-kultur-nrw",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ac4f860782fe2a3edf_Landing-Page_31.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6873c_Ministerium-fur-kultur_5.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8ec0720af50cb509cb_Landing-Page_31.jpg",
         description:
-            "Magazine Design for the Ministerium für Kultur und Wissenschaft NRW",
+            "Magazine design for the Ministerium für Kultur und Wissenschaft NRW",
     },
     {
         url: "projects#sechs-monate-amerika",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad1f8f89231f57ec75_Landing-Page_32.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6876b_sech-monate-amerika_1.1.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8f8a719a1ae96396fc_Landing-Page_32.jpg",
         description:
-            "Photo Book with over 800 images from North and South America",
+            "Photo Book with over 800 images, documenting contemporary culture in North and South America",
     },
     {
         url: "projects#waterslide",
