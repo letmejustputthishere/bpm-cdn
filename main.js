@@ -143,7 +143,7 @@ let projects = [
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3acff8b4b6be4bc6fef_Landing-Page_19.jpg",
         desktop:
             "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba686fb_fpdao_4.jpg",
-        description: "Visual Identity and web design for FP-DAO",
+        description: "Visual identity and web design for FP-DAO",
     },
     {
         url: "projects#item-magazin-1",
