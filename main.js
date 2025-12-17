@@ -16,6 +16,14 @@ let projects = [
             "Catalogue Raisonné for Michael Müller on the occasion of his solo exhibition at the Städel Museum Frankfurt",
     },
     {
+        url: "projects#salomon-zalando-milan",
+        mobile: "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/69428addf56fa477168869e3_salomon-zalando-mailand_1-mobile.webp",
+        desktop:
+            "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/69428ade2f8fe7d387232137_salomon-zalando-mailand_1.webp",
+        description:
+            "Event identity for Salomon x Zalando",
+    },
+    {
         url: "projects#deutsches-historisches-museum",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ac3db97df5c9321152_Landing-Page_3.jpg",
         desktop:
