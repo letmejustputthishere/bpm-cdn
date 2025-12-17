@@ -24,14 +24,6 @@ let projects = [
             "Event identity for Salomon x Zalando",
     },
     {
-        url: "projects#deutsches-historisches-museum",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ac3db97df5c9321152_Landing-Page_3.jpg",
-        desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba68666_deutsches-historisches-museum_4.jpg",
-        description:
-            "Deutsches Historisches Museum Berlin, printed matter for various exhibitions",
-    },
-    {
         url: "projects#kunstsaele",
         mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ac5b2f5e93f14a5822_Landing-Page_4.jpg",
         desktop:
@@ -48,20 +40,19 @@ let projects = [
             "Magazine design for the Ministerium für Kultur und Wissenschaft NRW",
     },
     {
-        url: "projects#am-abgrund-der-bilder",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3acd9ff38f7048ef941_Landing-Page_6.jpg",
+        url: "projects#waterslide",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad04c45b03cec2e090_Landing-Page_33.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e1d577804cbf5e0e3_Landing-Page_6.jpg",
-        description:
-            "Catalog for Michael Müller’s exhibition at the Museum im Kulturspeicher Würzburg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6874e_waterslide_1.jpg",
+        description: "Visual identity and web design for waterslide",
     },
     {
-        url: "projects#item-magazin-3",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c9504daf8fdc631a1de_Landing-Page_7.jpg",
+        url: "projects#on-zalando-zurich",
+        mobile: "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/694291944d2140c1851a5ef9_3ac7a25f7230c4664075fcd7efa356a1_on-zalando-zurich_6-mobile.webp",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8db49f6d2960a24456_Landing-Page_7.jpg",
+            "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/69429194f40374aa18836318_0f801f20220bb8441d43378e1b950c78_on-zalando-zurich__6.webp",
         description:
-            "item Magazin #3, annual lectureship at HTW Berlin, Department of Design",
+            "Event identity for On x Zalando, presented at Shedhalle Zürich",
     },
     {
         url: "projects#studio-michael-mueller",
@@ -86,12 +77,12 @@ let projects = [
         description: "Publication for Studio Michael Müller",
     },
     {
-        url: "projects#item-magazin-1",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ada884445bf832cbfe_Landing-Page_11.jpg",
+        url: "projects#on-zalando-berlin",
+        mobile: "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/6942b4bbbc132a2d2abb9abb_on-zalando-berlin_1-mobile.webp",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e595807266e9eb211_Landing-Page_11.jpg",
+            "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/6942b4bb7f1431b407a9ab5c_on-zalando-berlin_1.webp",
         description:
-            "item Magazin #1, annual lectureship at HTW Berlin, Department of Design",
+            "Event identity for On x Zalando, presented at Reethaus Berlin",
     },
     {
         url: "projects#am-abgrund-der-bilder",
@@ -102,18 +93,18 @@ let projects = [
             "Catalog for Michael Müller’s exhibition at the Museum im Kulturspeicher Würzburg",
     },
     {
-        url: "projects#waterslide",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad955dcc74fb98c93e_Landing-Page_13.jpg",
+        url: "projects#kienbaum-consultants",
+        mobile: "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/694295f493bbe40fe17d739f_Kienbaum-Consultants_1-mobile.webp",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e14960ce880fb1cff_Landing-Page_13.jpg",
-        description: "Visual identity and web design for waterslide",
+            "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/694295f46d937a2305425715_Kienbaum-Consultants_1.webp",
+        description: "Award-winning Corporate identity and imagery for Kienbaum Consultants",
     },
     {
-        url: "projects#cozy-gang",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3adb891b647e8b125d3_Landing-Page_14.jpg",
+        url: "projects#adidas-evo-sl",
+        mobile: "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/6942985350b6505d794bc7dd_adidas-evo-sl_5-mobile.webp",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d39bc964e153bd1b1ba3_Landing-Page_14.jpg",
-        description: "Textile design for Cozy Gang",
+            "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/694298559e59b755c23d6c92_adidas-evo-sl_5.webp",
+        description: "Event identity for Adidas",
     },
     {
         url: "projects#der-geschenkte-tag",
@@ -140,18 +131,18 @@ let projects = [
             "Photo Book with over 800 images, documenting contemporary culture in North and South America",
     },
     {
-        url: "projects#neununddreissig-null",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad7505cd1896e2e16c_Landing-Page_18.jpg",
+        url: "projects#mutual-attraction",
+        mobile: "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/694286678985d565e8d8535c_Mutual-Attraction_1-mobile.webp",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6879a_neununddreissig-null_1.jpg",
-        description: "Redesign for 39NULL magazine",
+            "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/69428669d69fc10e237de775_Mutual-Attraction_1.webp",
+        description: "Poster design for Mutual Attraction at Giri Berlin",
     },
     {
-        url: "projects#fpdao",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3acff8b4b6be4bc6fef_Landing-Page_19.jpg",
+        url: "projects#triumph-zalando-berlin",
+        mobile: "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/6942b2262e71641c3cd3d1da_triumph-zalando-berlin_3-mobile.webp",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba686fb_fpdao_4.jpg",
-        description: "Visual identity and web design for FP-DAO",
+            "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/6942b2269b424114b60ba766_triumph-zalando-berlin_3.webp",
+        description: "Event identity for the Triumph x Zalando runway show, presented at Kantgaragen Berlin",
     },
     {
         url: "projects#item-magazin-1",
@@ -162,11 +153,11 @@ let projects = [
             "item Magazin #1, annual lectureship at HTW Berlin, Department of Design",
     },
     {
-        url: "projects#embroidery",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c968617864e68a02e38_Landing-Page_21.jpg",
+        url: "projects#bohei-wines",
+        mobile: "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/6942ae507c5988554868d2f9_bohei-wines_1-mobile.webp",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6877a_embroidery_1.jpg",
-        description: "Embroidered typography on textile",
+            "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/6942ae51bb68a0025da0d30a_bohei-wines_1.webp",
+        description: "Visual identity and wine label design for Bohei",
     },
     {
         url: "projects#item-magazin-3",
@@ -193,12 +184,11 @@ let projects = [
             "Visual identity and web design for Jenny Gleitsmann Consultancy",
     },
     {
-        url: "projects#item-magazin-4",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad220a4806fbfbf3d1_Landing-Page_25.jpg",
+        url: "projects#adidas-evo-sl",
+        mobile: "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/694298535f2840852f8d3d44_adidas-evo-sl_3-mobile.webp",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e91312d16cee714a9_Landing-Page_25.jpg",
-        description:
-            "item Magazin #4, annual lectureship at HTW Berlin, Department of Design",
+            "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/694298550bbfd3c8d4e2f324_adidas-evo-sl_3.webp",
+        description: "Event identity for Adidas",
     },
     {
         url: "projects#studio-visit",
@@ -208,12 +198,12 @@ let projects = [
         description: "Publication for Studio Michael Müller",
     },
     {
-        url: "projects#operator",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ac9e1688e2b533bba5_Landing-Page_27.jpg",
+        url: "projects#item-magazin-4",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad220a4806fbfbf3d1_Landing-Page_25.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e49105ae42615cb64_Landing-Page_27.jpg",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8e91312d16cee714a9_Landing-Page_25.jpg",
         description:
-            "Visual identity for Operator’s NFT-Series “Privacy Collection” by the artists Ania Catherine and Dejha Ti",
+            "item Magazin #4, annual lectureship at HTW Berlin, Department of Design",
     },
     {
         url: "projects#studio-michael-mueller",
@@ -239,12 +229,11 @@ let projects = [
             "Catalogue Raisonné for Michael Müller on the occasion of his solo exhibition at the Städel Museum Frankfurt",
     },
     {
-        url: "projects#ministerium-kultur-nrw",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ac4f860782fe2a3edf_Landing-Page_31.jpg",
+        url: "projects#kienbaum-consultants",
+        mobile: "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/694295f403ce1a55a029b39a_Kienbaum-Consultants_2-mobile.webp",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c10c8ec0720af50cb509cb_Landing-Page_31.jpg",
-        description:
-            "Magazine design for the Ministerium für Kultur und Wissenschaft NRW",
+            "https://cdn.prod.website-files.com/69418a9071c7263dedd803d1/694295f4dcc814218bbea3bb_Kienbaum-Consultants_2.webp",
+        description: "Award-winning Corporate identity and imagery for Kienbaum Consultants",
     },
     {
         url: "projects#sechs-monate-amerika",
@@ -255,11 +244,11 @@ let projects = [
             "Photo Book with over 800 images, documenting contemporary culture in North and South America",
     },
     {
-        url: "projects#waterslide",
-        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3ad04c45b03cec2e090_Landing-Page_33.jpg",
+        url: "projects#fpdao",
+        mobile: "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65c0d3acff8b4b6be4bc6fef_Landing-Page_19.jpg",
         desktop:
-            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba6874e_waterslide_1.jpg",
-        description: "Visual identity and web design for waterslide",
+            "https://uploads-ssl.webflow.com/65bcc9611f29c99b6ba68602/65bcc9611f29c99b6ba686fb_fpdao_4.jpg",
+        description: "Visual identity and web design for FPDAO",
     },
 ];
 
